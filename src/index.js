@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'React redux'
-import { store } from './app/store'
+import { Provider } from 'react-redux'
+import { store } from './app/store.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider>
-      <App store={store}/>
+    <Provider store={store}>
+      <App />
     </Provider>
   </React.StrictMode>
 );
